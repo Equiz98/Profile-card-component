@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.bubble1{
+    position: absolute;
+    top: -75%;
+    left: -20%;
+}
+
+.bubble2{
+    position: absolute;
+    bottom: -80%;
+    right: -15%;
+}
+.Cardperfil{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin:auto;
+    position: relative;    
+   
+}
+
+
+.Pimg{
+    margin-top: -60px;
+    vertical-align: center; /* Averiguar que hace esta propiedad */
+    text-align: center; /* Aqui me permite centrarlo porque la porpiedad text-align toma al div o al img como texto, debo ver a cual de los dos toma asi */
+}
+
+.Pimg img{
+    border-radius: 50px;
+    border:5px solid #fff;
+}
+
+.Nombre{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Nombre P{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Nombre P span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.Nombre h4{
+    color:hsl(0, 0%, 59%) ;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.division{
+    width: 100%;
+    background-color:hsl(0, 0%, 90%) ;
+    height: 1.5px;
+    margin-top: 30px;
+}
+
+.Columnas{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 30px;
+}
+
+.texto{
+    /* align-self: center; */
+    text-align: center;
+}
+
+.texto p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.texto h4{
+    font-weight: 400;
+    color:hsl(0, 0%, 59%);
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.attribution{
+width: 100%;
+ position: absolute;
+ bottom: 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+
