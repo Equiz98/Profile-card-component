@@ -1,0 +1,124 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsla(227, 10%, 46%, 0.205);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* este porcentaje es igual a 10px */
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans';
+  background-color: var(--Dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  /* Interesnte */
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.Cardperfil {
+  background-color: #ffff;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.Cardperfil-img {
+  width: 100%;
+}
+
+.Cardperfil-cuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Cardperfil-cuerpo-imgperfil {
+  margin-top: -60px;
+  border-radius: 50px;
+  border: 5px solid #fff;
+}
+
+.Cardperfil-cuerpo-nombre {
+  font-size: 2rem;
+  margin-top: 25px;
+}
+
+.Cardperfil-cuerpo-nombre span {
+  color: var(--Dark-gray);
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.Cardperfil-cuerpo-ciudad {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Dark-gray);
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.Cardperfil-cuerpo-division {
+  width: 100%;
+  background-color: var(--Dark-grayish-blue);
+  height: 1.5px;
+}
+
+.Cardperfil-columnas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Cardperfil-columnas-texto {
+  text-align: center;
+}
+
+.Cardperfil-columnas-texto p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.Cardperfil-columnas-texto h4 {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 2.5rem;
+  color: var(--Dark-gray);
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=estilos.css.map */

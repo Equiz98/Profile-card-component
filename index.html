@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/estilos1.css"> -->
+  <link rel="stylesheet" href="css/estilos.css">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,49 +17,51 @@
   </style>
 </head>
 <body>
-  <svg class="bubble1" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
-  <svg class="bubble2" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg>
+  <!-- <svg class="bubble1" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
+  <svg class="bubble2" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg> -->
   
-  
+  <main class="flex">
+
   <section class="Cardperfil">
 
-  <div class="BGblue">
-    <img src="images/bg-pattern-card.svg" alt="Imagenazul" style="border-top-left-radius: 15px; border-top-right-radius: 15px;" >
-  </div>
+  
+    <img src="images/bg-pattern-card.svg" alt="Imagenazul" class="Cardperfil-img" > <!-- Eliminamos el style del BG -->
+  
 
-  <div class="BGwhite">
-    <div class="Pimg">
-      <img src="images/image-victor.jpg" alt="Fotodelusuario">
+  <div class="Cardperfil-cuerpo">
+    
+      <img src="images/image-victor.jpg" alt="Fotodelusuario" class="Cardperfil-cuerpo-imgperfil">
+    
+
+    
+      <h1  class="Cardperfil-cuerpo-nombre">Victor Crest <span>26</span></h1> <!--en ves de <p>  usamos h1 para aprovechar el ceo -->
+      <p class="Cardperfil-cuerpo-ciudad">London</p>
     </div>
 
-    <div class="Nombre">
-      <p>Victor Crest <span>26</span></p>
-      <h4>London</h4>
-    </div>
+    <div class="Cardperfil-cuerpo-division"></div>
 
-    <div class="division"></div>
+    <div class="Cardperfil-columnas">
 
-    <div class="Columnas">
-
-      <div class="texto">
+      <div class="Cardperfil-columnas-texto">
       <p>80k</p>
       <h4>Followers</h4>
     </div>
 
-    <div class="texto">
+    <div class="Cardperfil-columnas-texto">
       <p>803k</p>
       <h4>Likes</h4>
     </div>
 
-    <div class="texto">
+    <div class="Cardperfil-columnas-texto">
       <p>1.4K</p>
       <h4>Photos</h4>
     </div>
 
     </div>
-  </div>
+  
 
 </section>
+</main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
